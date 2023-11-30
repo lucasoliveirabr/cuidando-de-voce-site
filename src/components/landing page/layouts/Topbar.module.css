@@ -1,0 +1,49 @@
+#topbar {
+    background: #fff;
+    height: 40px;
+    font-size: 14px;
+    transition: all 0.5s;
+    z-index: 996;
+  }
+  
+  #topbar.topbar-scrolled {
+    top: -40px;
+  }
+  
+  #topbar .contact_info a {
+    text-decoration: none;
+    line-height: 1;
+    color: #444444;
+    transition: 0.3s;
+  }
+  
+  #topbar .contact_info a:hover {
+    color: #cc1919;
+  }
+  
+  #topbar .contact_info i {
+    color: #cc1919;
+    padding-right: 4px;
+    margin-left: 15px;
+    line-height: 0;
+  }
+  
+  #topbar .contact_info i:first-child {
+    margin-left: 0;
+  }
+  
+  #topbar .social_links a {
+    color: #994343;
+    padding-left: 15px;
+    display: inline-block;
+    line-height: 1px;
+    transition: 0.3s;
+  }
+  
+  #topbar .social_links a:hover {
+    color: #cc1919;
+  }
+  
+  #topbar .social_links a:first-child {
+    border-left: 0;
+  }

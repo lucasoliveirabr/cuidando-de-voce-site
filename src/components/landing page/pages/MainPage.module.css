@@ -1,0 +1,563 @@
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section_bg {
+  background-color: #fdf1f1;
+}
+
+.section_title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section_title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #642c2c;
+}
+
+.section_title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section_title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #cc1919;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section_title p {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  padding: 20px 0;
+  background-color: #fdf1f1;
+  min-height: 40px;
+  margin-top: 120px;
+}
+
+@media (max-width: 992px) {
+  .breadcrumbs {
+    margin-top: 100px;
+  }
+}
+
+.breadcrumbs h2 {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .breadcrumbs h2 {
+    margin: 0 0 10px 0;
+  }
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.breadcrumbs ol li+li {
+  padding-left: 10px;
+}
+
+.breadcrumbs ol li+li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #7d6c6c;
+  content: "/";
+}
+
+@media (max-width: 768px) {
+  .breadcrumbs .d-flex {
+    display: block !important;
+  }
+
+  .breadcrumbs ol {
+    display: block;
+  }
+
+  .breadcrumbs ol li {
+    display: inline-block;
+  }
+}
+
+/*--------------------------------------------------------------
+# Why Us
+--------------------------------------------------------------*/
+.why_us .content {
+  padding: 30px;
+  background: #cc1919;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.why_us .content h3 {
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.why_us .content p {
+  margin-bottom: 30px;
+}
+
+.why_us .content .more_btn {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 6px 30px 8px 30px;
+  color: #fff;
+  border-radius: 50px;
+  transition: all ease-in-out 0.4s;
+  text-decoration: none;
+}
+
+.why_us .content .more_btn i {
+  font-size: 14px;
+}
+
+.why_us .content .more_btn:hover {
+  color: #cc1919;
+  background: #fff;
+}
+
+.why_us .icon_boxes .icon_box {
+  text-align: center;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  width: 100%;
+}
+
+.why_us .icon_boxes .icon_box i {
+  font-size: 40px;
+  color: #cc1919;
+  margin-bottom: 30px;
+}
+
+.why_us .icon_boxes .icon_box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
+
+.why_us .icon_boxes .icon_box p {
+  font-size: 15px;
+  color: #848484;
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about .icon_boxes h4 {
+  font-size: 18px;
+  color: #ab4b4b;
+  margin-bottom: 15px;
+}
+
+.about .icon_boxes h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #642c2c;
+  margin-bottom: 15px;
+}
+
+.about .icon_box {
+  margin-top: 40px;
+}
+
+.about .icon_box .icon {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border: 2px solid #f18d8d;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+.about .icon_box .icon i {
+  color: #cc1919;
+  font-size: 32px;
+}
+
+.about .icon_box:hover .icon {
+  background: #cc1919;
+  border-color: #cc1919;
+}
+
+.about .icon_box:hover .icon i {
+  color: #fff;
+}
+
+.about .icon_box .title {
+  margin-left: 85px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.about .icon_box .title a {
+  color: #403434;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.about .icon_box .title a:hover {
+  color: #cc1919;
+}
+
+.about .icon_box .description {
+  margin-left: 85px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.about .video_box {
+  background: url("../../../assets/img/about.jpg") center center no-repeat;
+  background-size: cover;
+  min-height: 500px;
+}
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services .icon_box {
+  text-align: center;
+  border: 1px solid #edd5d5;
+  padding: 80px 20px;
+  transition: all ease-in-out 0.3s;
+}
+
+.services .icon_box .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: #cc1919;
+  border-radius: 5px;
+  transition: all 0.3s ease-out 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transform-style: preserve-3d;
+}
+
+.services .icon_box .icon i {
+  color: #fff;
+  font-size: 28px;
+}
+
+.services .icon_box .icon::before {
+  position: absolute;
+  content: "";
+  left: -8px;
+  top: -8px;
+  height: 100%;
+  width: 100%;
+  background: #f7baba;
+  border-radius: 5px;
+  transition: all 0.3s ease-out 0s;
+  transform: translateZ(-1px);
+}
+
+.services .icon_box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.services .icon_box h4 a {
+  color: #642c2c;
+  text-decoration: none;
+}
+
+.services .icon_box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .icon_box:hover {
+  background: #cc1919;
+  border-color: #cc1919;
+}
+
+.services .icon_box:hover .icon {
+  background: #fff;
+}
+
+.services .icon_box:hover .icon i {
+  color: #cc1919;
+}
+
+.services .icon_box:hover .icon::before {
+  background: #e63232;
+}
+
+.services .icon_box:hover h4 a,
+.services .icon_box:hover p {
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Departments
+--------------------------------------------------------------*/
+.departments {
+  overflow: hidden;
+}
+
+.departments .nav_tabs {
+  border: 0;
+}
+
+.departments .nav_link {
+  border: 0;
+  padding: 12px 15px 12px 0;
+  transition: 0.3s;
+  color: #642c2c;
+  border-radius: 0;
+  border-right: 2px solid #ebf1f6;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.departments .nav_link:hover {
+  color: #cc1919;
+}
+
+.departments .nav_link.active {
+  color: #cc1919;
+  border-color: #cc1919;
+}
+
+.departments .tab_pane.active {
+  -webkit-animation: fadeIn 0.5s ease-out;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.departments .details h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #642c2c;
+}
+
+.departments .details p {
+  color: #777777;
+}
+
+.departments .details p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  .departments .nav_link {
+    border: 0;
+    padding: 15px;
+  }
+
+  .departments .nav_link.active {
+    color: #fff;
+    background: #cc1919;
+  }
+}
+
+/*--------------------------------------------------------------
+# Gallery
+--------------------------------------------------------------*/
+.gallery .gallery_item {
+  overflow: hidden;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+
+.gallery .gallery_item img {
+  transition: all ease-in-out 0.4s;
+}
+
+.gallery .gallery_item:hover img {
+  transform: scale(1.1);
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact .info {
+  width: 100%;
+  background: #fff;
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #cc1919;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #fad6d6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #642c2c;
+}
+
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #ab4b4b;
+}
+
+.contact .info .email,
+.contact .info .phone {
+  margin-top: 40px;
+}
+
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
+  background: #cc1919;
+  color: #fff;
+}
+
+.contact .php_email_form {
+  width: 100%;
+  background: #fff;
+}
+
+.contact .php_email_form .form_group {
+  padding-bottom: 8px;
+}
+
+.contact .php_email_form .error_message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php_email_form .error_message br+br {
+  margin-top: 25px;
+}
+
+.contact .php_email_form .sent_message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php_email_form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php_email_form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php_email_form input,
+.contact .php_email_form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php_email_form input {
+  height: 44px;
+}
+
+.contact .php_email_form textarea {
+  padding: 10px 12px;
+}
+
+.contact .php_email_form button[type=submit] {
+  background: #cc1919;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact .php_email_form button[type=submit]:hover {
+  background: #e31c1c;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

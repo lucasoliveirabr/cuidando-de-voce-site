@@ -1,0 +1,36 @@
+#footer, .span {
+    color: #444444;
+    font-size: 14px;
+    background: #fdf1f1;
+}
+
+#footer .credits {
+    padding-top: 5px;
+    font-size: 13px;
+    color: #444444;
+}
+
+#footer .credits a {
+    color: #cc1919;
+}
+
+#footer .social_links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #cc1919;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+#footer .social_links a:hover {
+    background: #e31c1c;
+    color: #fff;
+    text-decoration: none;
+}
