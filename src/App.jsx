@@ -22,7 +22,7 @@ export default function App() {
         <Hero />
         <Container customClass="min_height">
           <Routes>
-            <Route path="/" element={<MainPage />} />
+            <Route path="/cuidando-de-voce-site" element={<MainPage />} />
             <Route path="*" element={<NoMatch />} />
           </Routes>
         </Container>
